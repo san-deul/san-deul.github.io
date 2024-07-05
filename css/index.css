@@ -1,0 +1,35 @@
+@import url(common.css);
+
+/**/
+@font-face {
+  font-family: 'IBMPlexSansKR-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*변수*/
+:root{
+  --ibmfont:'IBMPlexSansKR-Regular';
+}
+
+
+/*공통*/
+.in{width:100%;max-width:1280px;margin:0 auto;}
+
+
+.outline{width: 95%;max-width:1280px;margin:0 auto;}
+
+header{width:95%;height:60px;margin:10px auto 0; border:1px solid #000;/*border-left:none;border-right:none*/}
+header .header_in{height:100%;display:flex;align-items: center;justify-content: space-evenly;}
+header .header_in li a{display:block;font-family: var(--ibmfont);}
+
+.section{width:100%;margin-top:60px;border:1px solid #000;}
+
+
+.intro{height: 350px;}
+.intro .left{width: 30%;height: 100%;background:#000}
+
+
+.project1{height:500px;}
+.project_title{font-size:36px;color:#fff;text-shadow: -1px 0px #000, 0px 1px #000, 1px 0px #000, 0px -1px #000;}
