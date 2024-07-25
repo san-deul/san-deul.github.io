@@ -1,0 +1,209 @@
+@import url(common.css);
+
+/*폰트*/
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+
+
+@font-face {
+  font-family: 'IBMPlexSansKR-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.geologica-<uniquifier> {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0,
+    "SHRP" 0;
+}
+
+.vidaloka-regular {
+  font-family: "Vidaloka", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/*변수*/
+:root{
+  --ibmfont:'IBMPlexSansKR-Regular';
+  --geologica:"Geologica", sans-serif;
+  --pre:'Pretendard-Regular';
+  --vida:"Vidaloka", serif;
+  --px16:16px;
+
+}
+
+.project_title{font-family: var(--geologica);font-weight: 900;;}
+
+
+@media screen and (min-width:1001px){
+
+
+/*공통*/
+*{font-family: var(--pre);font-size: 18px;}
+.in{width:100%;max-width:1280px;margin:0 auto;}
+.bold{font-weight: bold;}
+
+
+.top{position: fixed;bottom:50px;right:50px;width: 50px;height:50px;border-radius: 50%; background: #fff;cursor: pointer;
+  box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, .2);;}
+.top span{display: inline-block;width: 100%;height: 100%;text-align: center;}
+.top span img{width: 75%;padding-top:5px}
+.outline{width: 95%;max-width:1200px;margin:0 auto; padding-bottom:30px;}
+
+header{width:95%;height:60px;margin:10px auto 0; border:1px solid #000;/*border-left:none;border-right:none*/}
+header .header_in{height:100%;display:flex;align-items: center;justify-content: space-evenly;}
+header .header_in li a{display:block;font-family: var(--ibmfont);transition: all 0.3s;}
+header .header_in li:hover a{color:#E5224C;}
+
+
+
+.title_p{display:inline-block;position:relative}
+/*
+.title_s{display:inline-block;width:110%;height:35%;background:rgba(196,0,15,80%);
+  position: absolute;bottom:0;left:50%;transform:translateX(-50%); z-index: -1;}
+*/
+.title_s{display:inline-block;width:13px;height:13px;border-radius:50%;background:#E5224C;
+  position: absolute;top:0;right:-20px;}
+
+
+  [data-ty]  {
+    display:block;
+    width: 100%;
+    line-height:1.5;
+  }
+
+
+
+/*info*/
+.info{display: flex;align-items: center;justify-content: space-between;}
+.tt{font-family: var(--vida);font-size: 100px;font-style: italic;font-weight:500;line-height:1;margin:80px;}
+.info .icon img{width: 70%;}
+/*about*/
+
+.about .in{width: 75%; margin:0 auto;}
+.about .in .txt_area{width: 100%;display:flex;}
+.about .in .left{width: 30%;}
+.about .in .right{width: 75%;}
+
+.about .txt_box{margin-bottom:40px;}
+.about .txt_box.edu{width: 90%;}
+.about .txt_box.cer{width: 50%;}
+.about .txt_box .title{font-family: var(--vida);font-size: 20px;font-weight:600;margin-bottom:12px;
+position:relative;display:inline-block;}
+.about .txt_box .title:after{content:'';position:absolute;display:inline-block;width:6px;height:6px;background:#E5224C;border-radius:50%;right:-12px;}
+.about .txt{display: flex;margin-bottom:5px;width: 100%;}
+
+.about .txt .t{font-weight:600;width:40%}
+.about .txt .c{font-weight:300;}
+
+.about .txt .cc:hover{transition: 0.3s ease-in-out;padding-left: 4px;}
+
+.about .icons img{max-width:45px;margin-right:20px;}
+
+
+
+.project_title{margin-top:140px;margin-bottom:60px;text-align: center;}
+.project_title p:first-child{font-family: var(--vida); font-size:25px;height:100%;}
+.project_title p:last-child{font-size:40px;height:100%;}
+
+.section{}
+
+
+.intro{height: 350px;}
+.intro .left{width: 10%;height: 100%;background:#000}
+
+
+/* Project1 영역 */
+.project{width:100%;border:3px solid #000;border-left:none;border-right:none;}
+
+
+
+.project .project_title{padding:30px 0;text-align: center;}
+.project .project_title p:first-child{font-family: var(--vida); font-size:25px;height:100%;}
+.project .project_title p:last-child{font-size:40px;height:100%;}
+.project .project_in{display: flex;align-items: center;padding:80px 0}
+
+
+.project .project_in .left{width:42%;}
+.project .project_in .right{width:58%;}
+
+
+.project .project_in .left .left_in{width:80%;margin:0 auto}
+.project .left .btn{display:inline-block;margin-top:36px;text-align: center;} 
+.project .left .btn a{display:inline-block;width: 100%;padding:6px 20px;border:1px solid #000;position: relative;transition: 0.6s;;}
+.project .left .btn span{display:inline-block;width: 0%;height: 100%;background: #E5224C;
+  position:absolute;top:0;left:0;z-index: -1;transition: 0.5s;}
+
+  .project .left .btn:hover a{color:#fff}
+.project .left .btn :hover span{width: 100%;}
+
+
+.project .right{}
+.project .right .right_in{width: 80%;margin:30px auto;}
+
+
+.project .project_img{border: 1px solid #dadada;}
+.project .right .project_exp{padding:30px 20px;}
+.project .right .project_exp p{line-height: 1.5; }
+
+
+.project .right .project_txt{width: 80%;margin:30px auto;}
+
+.project table{width:100%;}
+.project table tr{display: flex;margin-bottom:10px;}
+.project table .t{width:30%;}
+
+
+/* Project 상세보기 */
+.project_detail{width:100%; height:30px;border-bottom:1px solid #000;background:#000;display: flex;justify-content: center;align-items: center;cursor:pointer}
+.project_detail span{color:#fff;}
+.project_detail .more_btn{display:inline-block;width: 25px;height: 25px;}
+.project_detail .more_btn.on{background:url(/images/more_on.png);background-size: cover;}
+.project_detail .more_btn.on1{background:url(/images/more_on1.png);background-size: cover;}
+
+.project_detail_content_area{display: none;}
+
+.project_detail_header{width:40%;height:auto;line-height:30px; margin:40px auto 0;
+  display:flex;flex-wrap: wrap;justify-content:space-evenly;align-items: center;gap:10px;}
+.project_detail_header li{ width:25%;height: 100%;text-align: center;border:1px solid #000}
+.project_detail_header2{width:50%;height:auto;flex-wrap: wrap}
+.project_detail_header2 li{width:22.5%;margin-top:16px;}
+
+
+.project_detail_header li a{display:block; width:100%;height: 100%;}
+.project_detail_header li.on {background:#000 ;}
+.project_detail_header li.on a{color:#fff;}
+
+.project_detail_content{margin:0 auto;border-bottom:1px solid #000;min-height:700px;}
+.project_detail_content .detail{margin-top:60px;}
+
+.project_detail_content1 .detail_slide{display: flex;align-items: center}
+.project_detail_content1 .detail_slide>div{width: 50%;}
+
+
+.project_detail_content1 .slide_left{padding-left:60px;}
+.project_detail_content1 .slide_left p{margin-bottom:10px}
+
+
+/*about me*/
+.about{margin-top:40px;}
+
+
+.thanks{margin-top:80px;}
+.thanks p{font-size: 60px;font-family: var(--pre);font-weight: 600;text-align: center;padding:50px 0}
+}
