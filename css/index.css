@@ -54,6 +54,7 @@
 
 
 /*공통*/
+.mobile{display:none;}
 *{font-family: var(--pre);font-size: 18px;}
 .in{width:100%;max-width:1280px;margin:0 auto;}
 .bold{font-weight: bold;}
@@ -207,3 +208,11 @@ position:relative;display:inline-block;}
 .thanks{margin-top:80px;}
 .thanks p{font-size: 60px;font-family: var(--pre);font-weight: 600;text-align: center;padding:50px 0}
 }
+
+
+@media screen and (min-width: 0px) and (max-width: 1001px) {
+  .outline,.top{display:none;;}
+  .mobile{display:block;text-align: center;margin-top:10px;font-size:24px;font-weight:bold;}
+  
+}
+  
